@@ -2,9 +2,11 @@ def reduce(value):
     if value not in [11, 22, 33]:
         str_val = str(value)
         final_value = 0
-        print(f'\n----- Final sum values = {str_val}')
+        # print(f'\n----- Final sum values = {str_val}')
         for digit in str_val:
             final_value += int(digit)
+    else:
+        final_value = value
     return final_value
 
 alpha = ['a', 'b', 'c','d',"e", 'f', 'g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
